@@ -14,30 +14,6 @@
         android:theme="@style/Theme.RecyclerViewExamples"
         tools:targetApi="31">
         <activity
-            android:name=".InfiniteScrollRecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SimpleSearchRecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TwoViewsRecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SimpleRecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RecyclerViewSearchScreen"
-            android:exported="false" />
-        <activity
-            android:name=".RecyclerViewTwoViewsScreen"
-            android:exported="false" />
-        <activity
-            android:name=".SimpleRecyclerViewFragmentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SimpleRecyclerViewScreen"
-            android:exported="false" />
-        <activity
             android:name=".screens.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -46,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".screens.InfiniteScrollRecyclerViewActivity" />
+        <activity android:name=".screens.SimpleRecyclerViewActivity" />
+        <activity android:name=".screens.SimpleRecyclerViewFragmentActivity" />
+        <activity android:name=".screens.SimpleSearchRecyclerViewActivity" />
+        <activity android:name=".screens.TwoViewsRecyclerViewActivity" />
     </application>
 
 </manifest>

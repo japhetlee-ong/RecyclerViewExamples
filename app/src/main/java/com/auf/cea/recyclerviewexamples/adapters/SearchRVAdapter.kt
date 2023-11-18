@@ -48,11 +48,11 @@ class SearchRVAdapter(private var fruitList:ArrayList<FruitsModel>): RecyclerVie
     private val fruitFilter = object : Filter() {
         override fun performFiltering(constraint : CharSequence?): FilterResults{
             val filteredList: ArrayList<FruitsModel> = ArrayList()
-            if(constraint == null || constraint.isEmpty()){
+            if(constraint.isNullOrEmpty()){
                 initialFruitList.let { filteredList.addAll(it) }
                 //fruitList.let { filteredList.addAll(it) }
             }else{
-                val query = constraint.toString().trim().lowercase()
+                val query = "$constraint".trim().lowercase()
                 initialFruitList.forEach {
                     if(it.name.lowercase(Locale.ROOT).contains(query)){
                         filteredList.add(it)

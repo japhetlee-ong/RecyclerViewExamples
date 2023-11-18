@@ -55,6 +55,12 @@
             android:layout_height="wrap_content"
             android:text="Recycler view with infinite scroll" />
 
+        <Button
+            android:id="@+id/btn_rv_vm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recycler view with view model" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

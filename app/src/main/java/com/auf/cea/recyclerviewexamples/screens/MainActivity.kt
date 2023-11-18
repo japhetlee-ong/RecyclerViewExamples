@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
         binding.btnTwoViews.setOnClickListener(this)
         binding.btnSimpleRecyclerView.setOnClickListener(this)
         binding.btnSimpleRecyclerViewFragments.setOnClickListener(this)
+        binding.btnRvVm.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
             }
             R.id.btn_infinite_scroll ->{
                 val intent = Intent(this,InfiniteScrollRecyclerViewActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_rv_vm ->{
+                val intent = Intent(this, RecyclerviewWithViewModelActivity::class.java)
                 startActivity(intent)
             }
         }
